@@ -3,6 +3,16 @@ import Logo from "../assets/MastermindLogo2.png";
 import "../styles/Hero.css";
 
 const Hero = () => {
+  const scrollToForm = () => {
+
+    console.log('hij')
+    const formElement = document.getElementById('hubspotForm');
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+
   return (
     <section className="Hero">
       <div className="HeroContainer">
@@ -15,7 +25,7 @@ const Hero = () => {
         <p className="HeroSubtitle">
           Sophisticated wealth management for discerning clients
         </p>
-        <div className="InvitationBadge">By Invitation Only</div>
+        <div className="InvitationBadge" onClick={() => scrollToForm()}>Contact Us</div>
       </div>
     </section>
   );

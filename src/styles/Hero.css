@@ -95,18 +95,21 @@
   padding: var(--space-sm) var(--space-lg);
   background: var(--bg-accent);
   color: var(--primary-navy);
+  border: none;
   border-radius: var(--space-xs);
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   box-shadow: var(--shadow-lg);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 .InvitationBadge:hover {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
