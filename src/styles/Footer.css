@@ -1,0 +1,184 @@
+.Footer {
+  padding: var(--space-4xl) var(--space-md) var(--space-xl);
+  background: #121212;
+  color: white;
+}
+
+.FooterContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.FooterContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3xl);
+}
+
+.Form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#hubspotForm {
+  width: 100%;
+}
+
+/* HubSpot form styling overrides */
+#hubspotForm .hs-form {
+  max-width: 100%;
+}
+
+#hubspotForm .hs-form-field {
+  margin-bottom: var(--space-md);
+}
+
+#hubspotForm .hs-input {
+  width: 100%;
+  padding: var(--space-sm);
+  border-radius: var(--space-xs);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+#hubspotForm .hs-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#hubspotForm .hs-input:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#hubspotForm label {
+  color: white;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+}
+
+#hubspotForm .hs-button {
+  background: var(--bg-accent) !important;
+  color: var(--primary-navy) !important;
+  border: none !important;
+  padding: var(--space-sm) var(--space-lg) !important;
+  border-radius: var(--space-xs) !important;
+  font-family: 'Red Hat Display', sans-serif !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  cursor: pointer !important;
+  transition: transform 0.2s ease !important;
+}
+
+#hubspotForm .hs-button:hover {
+  transform: translateY(-1px) !important;
+}
+
+.FooterMessage {
+  text-align: center;
+  padding: var(--space-lg);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--space-sm);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+  width: 100%;
+}
+
+.CheckEmail {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.AdditionalQuestions {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+
+.FooterLegal {
+  text-align: center;
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+}
+
+.FooterLegal p {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: var(--space-xs);
+  font-weight: 400;
+}
+
+.Disclaimer {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .Footer {
+    padding: var(--space-3xl) var(--space-md) var(--space-lg);
+  }
+  
+  .Form {
+    max-width: 500px;
+  }
+  
+  .FooterContent {
+    gap: var(--space-2xl);
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .Footer {
+    padding: var(--space-2xl) var(--space-md) var(--space-lg);
+  }
+  
+  .Form {
+    max-width: 100%;
+  }
+  
+  .FooterContent {
+    gap: var(--space-xl);
+  }
+  
+  .CheckEmail {
+    font-size: 1rem;
+  }
+  
+  .AdditionalQuestions {
+    font-size: 0.9rem;
+  }
+  
+  #hubspotForm .hs-input {
+    padding: var(--space-sm);
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .Footer {
+    padding: var(--space-xl) var(--space-sm) var(--space-md);
+  }
+  
+  .FooterMessage {
+    padding: var(--space-sm);
+  }
+  
+  .FooterLegal p {
+    font-size: 0.85rem;
+  }
+}

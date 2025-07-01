@@ -1,0 +1,124 @@
+.Hero {
+  padding: var(--space-4xl) var(--space-md);
+  text-align: center;
+  background: #121212;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  gap: 0;
+  overflow: hidden;
+}
+
+.Hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  z-index: 1;
+}
+
+.Hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 25%),
+    radial-gradient(circle at 75% 75%, rgba(59, 130, 246, 0.1) 0%, transparent 25%),
+    radial-gradient(circle at 50% 10%, rgba(59, 130, 246, 0.1) 0%, transparent 20%),
+    radial-gradient(circle at 10% 90%, rgba(59, 130, 246, 0.1) 0%, transparent 15%),
+    radial-gradient(circle at 90% 10%, rgba(59, 130, 246, 0.2) 0%, transparent 20%);
+  z-index: 1;
+}
+
+@keyframes float {}
+
+.HeroContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.Logo {
+  width: 300px;
+  height: auto;
+  margin: 0 auto var(--space-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.Logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.HeroTitle {
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 3px;
+  line-height: 1.1;
+}
+
+.HeroTitleSub {
+  margin-bottom: var(--space-md);
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
+}
+
+.HeroSubtitle {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-xl);
+  font-weight: 400;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.InvitationBadge {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--bg-accent);
+  color: var(--primary-navy);
+  border-radius: var(--space-xs);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.2s ease;
+}
+
+.InvitationBadge:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 768px) {
+  .Hero {
+    padding: var(--space-2xl) var(--space-md);
+  }
+  
+  .HeroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .HeroSubtitle {
+    font-size: 1.1rem;
+  }
+}

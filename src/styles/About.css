@@ -1,0 +1,181 @@
+.About {
+  padding: var(--space-4xl) var(--space-md);
+  background: #1a1a1a;
+  color: white;
+}
+
+.AboutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.AboutContent {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.AboutTitle {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: var(--space-md);
+  color: white;
+  letter-spacing: 2px;
+}
+
+.AboutDescription {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  font-weight: 400;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ServicesSection {
+  margin-top: var(--space-4xl);
+}
+
+.ServicesTitle {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: var(--space-xl);
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.ServicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-lg);
+}
+
+.ServiceCard {
+  height: 200px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.ServiceCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.ServiceCard.Flipped .ServiceCardInner {
+  transform: rotateY(180deg);
+}
+
+.ServiceCardFront,
+.ServiceCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: var(--space-sm);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.ServiceCard:hover .ServiceCardFront,
+.ServiceCard:hover .ServiceCardBack {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.ServiceCardBack {
+  transform: rotateY(180deg);
+  justify-content: center;
+}
+
+.ServiceTitle {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.3px;
+  line-height: 1.3;
+}
+
+.ServiceDescription {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+  font-weight: 400;
+}
+
+.FlipIndicator {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  transition: color 0.3s ease;
+}
+
+.ServiceCard:hover .FlipIndicator {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.FlipIndicator svg {
+  transition: transform 0.3s ease;
+}
+
+.ServiceCard:hover .FlipIndicator svg {
+  transform: translateX(2px);
+}
+
+@media (max-width: 1200px) {
+  .ServicesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .About {
+    padding: var(--space-3xl) var(--space-md);
+  }
+  
+  .AboutTitle {
+    font-size: 2rem;
+  }
+  
+  .AboutDescription {
+    font-size: 1.1rem;
+  }
+  
+  .ServicesTitle {
+    font-size: 1.8rem;
+    margin-bottom: var(--space-xl);
+  }
+  
+  .ServicesGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+  
+  .ServiceCard {
+    height: 180px;
+  }
+  
+  .ServiceTitle {
+    font-size: 1.2rem;
+  }
+}
