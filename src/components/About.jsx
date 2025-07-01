@@ -17,7 +17,7 @@ const About = () => {
     },
     {
       id: 3,
-      title: 'Cryptocurrency Bookkeeping',
+      title: 'Crypto Accounting & Tax',
       description: 'Institutional-grade cryptocurrency custody, trading, and tax optimization. Navigate the digital asset landscape with confidence and security.'
     },
     {
@@ -27,7 +27,7 @@ const About = () => {
     },
     {
       id: 5,
-      title: 'Strategic Advisory',
+      title: 'Financial Advisory',
       description: 'Strategic financial advice tailored to your unique situation. Make informed decisions with our expert guidance and market insights.'
     },
     {

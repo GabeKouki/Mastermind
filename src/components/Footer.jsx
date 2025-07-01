@@ -38,7 +38,9 @@ const Footer = () => {
 
           <div className="FooterLegal">
             <p>
-              &copy; 2025 Exclusive Financial Services. All rights reserved.
+              &copy; 2025 Mastermind Family Office. All rights reserved.
+              Services being offered do not require a state license. Some
+              services may be provided through local affiliates.
             </p>
             <p className="Disclaimer">
               By invitation only. Services subject to qualification.
