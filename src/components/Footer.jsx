@@ -11,7 +11,7 @@ const Footer = () => {
         window.hbspt.forms.create({
           region: "na1",
           portalId: "50140473",
-          formId: "ec540f8d-b440-440e-8d30-0967f7973d5a",
+          formId: "50e38dc1-96d8-4b33-befc-6f519ea48081",
           target: "#hubspotForm",
         });
       }
