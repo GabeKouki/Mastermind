@@ -26,15 +26,15 @@ const Footer = () => {
           <div className="Form">
             <div id="hubspotForm"></div>
           </div>
-
-          <div className="FooterMessage">
-            <p className="CheckEmail">
-              Please check your email after submitting your application
-            </p>
-            <p className="AdditionalQuestions">
-              Additional questions may be required during the review process
-            </p>
-          </div>
+  {/* 
+            <div className="FooterMessage">
+              <p className="CheckEmail">
+                Please check your email after submitting your application
+              </p>
+              <p className="AdditionalQuestions">
+                Additional questions may be required during the review process
+              </p>
+            </div> */}
 
           <div className="FooterLegal">
             <p>

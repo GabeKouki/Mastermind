@@ -49,13 +49,13 @@
 }
 
 .Logo {
-  width: 300px;
+  width: 250px;
   height: auto;
   margin: 0 auto var(--space-xl);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .Logo img {
@@ -115,6 +115,11 @@
 @media (max-width: 768px) {
   .Hero {
     padding: var(--space-2xl) var(--space-md);
+  }
+
+  .Logo {
+    width: 175px;
+    margin-bottom: 12px;
   }
   
   .HeroTitle {

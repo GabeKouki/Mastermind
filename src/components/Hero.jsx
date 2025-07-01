@@ -4,8 +4,6 @@ import "../styles/Hero.css";
 
 const Hero = () => {
   const scrollToForm = () => {
-
-    console.log('hij')
     const formElement = document.getElementById('hubspotForm');
     if (formElement) {
       formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
