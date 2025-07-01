@@ -17,12 +17,12 @@ const About = () => {
     },
     {
       id: 3,
-      title: 'Crypto Accounting & Tax',
+      title: 'Digital Asset Accounting & Tax',
       description: 'Institutional-grade cryptocurrency custody, trading, and tax optimization. Navigate the digital asset landscape with confidence and security.'
     },
     {
       id: 4,
-      title: 'Financial Records',
+      title: 'Advanced Financial Reporting & Analytics',
       description: 'Meticulous financial record keeping and reporting. Maintain perfect transparency and organization across all your financial activities.'
     },
     {
@@ -32,7 +32,7 @@ const About = () => {
     },
     {
       id: 6,
-      title: 'Bespoke Solutions',
+      title: 'Tailored Financial Solutions',
       description: 'Additional custom services tailored to your specific needs. We continuously expand our offerings to serve our clients better.'
     }
   ];

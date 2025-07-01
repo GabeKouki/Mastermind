@@ -4,12 +4,11 @@ import "../styles/Hero.css";
 
 const Hero = () => {
   const scrollToForm = () => {
-    const formElement = document.getElementById('hubspotForm');
+    const formElement = document.getElementById("hubspotForm");
     if (formElement) {
-      formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      formElement.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }
-
+  };
 
   return (
     <section className="Hero">
@@ -21,9 +20,12 @@ const Hero = () => {
         <h2 className="HeroTitleSub">FAMILY OFFICE SERVICES</h2>
 
         <p className="HeroSubtitle">
-          Sophisticated wealth management for discerning clients
+          Where legacy meets precision — private wealth solutions for the
+          discerning few.{" "}
         </p>
-        <div className="InvitationBadge" onClick={() => scrollToForm()}>Contact Us</div>
+        <div className="InvitationBadge" onClick={() => scrollToForm()}>
+          Contact Us
+        </div>
       </div>
     </section>
   );

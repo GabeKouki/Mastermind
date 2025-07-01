@@ -16,6 +16,10 @@
   gap: var(--space-3xl);
 }
 
+.hsfc-PhoneInput__FlagAndCaret__Flag {
+  color: white;
+}
+
 .Form {
   width: 100%;
   max-width: 600px;
