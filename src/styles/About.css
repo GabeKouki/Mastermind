@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .About {
   padding: var(--space-4xl) var(--space-md);
   background: #1a1a1a;
@@ -16,7 +20,7 @@
 
 .AboutTitle {
   font-size: 2.8rem;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: var(--space-md);
   color: white;
   letter-spacing: 2px;
@@ -52,7 +56,7 @@
 }
 
 .ServiceCard {
-  height: 200px;
+  height: 250px;
   perspective: 1000px;
   cursor: pointer;
 }
@@ -86,6 +90,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: box-shadow 0.3s ease;
   backdrop-filter: blur(10px);
+  overflow: hidden;
 }
 
 .ServiceCard:hover .ServiceCardFront,
@@ -97,6 +102,10 @@
 .ServiceCardBack {
   transform: rotateY(180deg);
   justify-content: center;
+  overflow-y: auto;
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
 }
 
 .ServiceTitle {
@@ -114,8 +123,11 @@
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
-  margin-bottom: var(--space-md);
   font-weight: 400;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow-y: auto;
+  max-height: 100%;
 }
 
 .FlipIndicator {
@@ -152,29 +164,29 @@
   .About {
     padding: var(--space-3xl) var(--space-md);
   }
-  
+
   .AboutTitle {
     font-size: 2rem;
   }
-  
+
   .AboutDescription {
     font-size: 1.1rem;
   }
-  
+
   .ServicesTitle {
     font-size: 1.8rem;
     margin-bottom: var(--space-xl);
   }
-  
+
   .ServicesGrid {
     grid-template-columns: 1fr;
     gap: var(--space-sm);
   }
-  
+
   .ServiceCard {
-    height: 180px;
+    height: 250px;
   }
-  
+
   .ServiceTitle {
     font-size: 1.2rem;
   }
