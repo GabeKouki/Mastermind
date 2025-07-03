@@ -1,0 +1,190 @@
+.PrivacyPolicy {
+  background: #121212;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 6rem 0 4rem 0;
+  padding-top: max(6rem, env(safe-area-inset-top, 0px) + 4rem);
+  padding-bottom: max(4rem, env(safe-area-inset-bottom, 0px) + 2rem);
+  color: white;
+}
+
+.PrivacyPolicyContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.PrivacyPolicyHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.PrivacyPolicyIcon {
+  color: var(--primary-light);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.PrivacyPolicyTitle {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: white;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-family: 'Red Hat Display', sans-serif;
+  letter-spacing: 2px;
+}
+
+.PrivacyPolicyLastUpdated {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--primary-light);
+  font-weight: 500;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.PrivacyPolicyContent {
+  line-height: 1.7;
+}
+
+.PrivacySection {
+  margin-bottom: 3rem;
+}
+
+.PrivacySection h2 {
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  color: white;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-left: 4px solid var(--primary-light);
+  padding-left: 1rem;
+  font-family: 'Red Hat Display', sans-serif;
+  letter-spacing: 1px;
+}
+
+.PrivacySection p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
+}
+
+.PrivacySection ul {
+  margin: 1rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.PrivacySection li {
+  position: relative;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
+}
+
+.PrivacySection li::before {
+  content: "•";
+  color: var(--primary-light);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.PrivacySection strong {
+  color: var(--primary-light);
+  font-weight: 600;
+}
+
+.PrivacyContactInfo {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-light);
+  margin: 1rem 0;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.PrivacyContactInfo p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.PrivacyContactInfo a {
+  color: var(--primary-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.PrivacyContactInfo a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .PrivacyPolicy {
+    padding: 4rem 0 3rem 0;
+    padding-top: max(4rem, env(safe-area-inset-top, 0px) + 2rem);
+    padding-bottom: max(3rem, env(safe-area-inset-bottom, 0px) + 1rem);
+  }
+
+  .PrivacyPolicyContainer {
+    padding: 0 1rem;
+  }
+
+  .PrivacyPolicyHeader {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .PrivacySection {
+    margin-bottom: 2rem;
+  }
+
+  .PrivacySection h2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .PrivacySection p,
+  .PrivacySection li {
+    font-size: 1rem;
+  }
+
+  .PrivacyContactInfo {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .PrivacyPolicyContainer {
+    padding: 0 0.5rem;
+  }
+
+  .PrivacySection h2 {
+    border-left: 3px solid var(--primary-light);
+    padding-left: 0.75rem;
+  }
+
+  .PrivacyContactInfo {
+    padding: 0.75rem;
+  }
+}

@@ -16,8 +16,24 @@
   gap: var(--space-3xl);
 }
 
-.hsfc-PhoneInput__FlagAndCaret__Flag {
+.PrivacyLink {
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.PrivacyLink a {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.PrivacyLink a:hover {
   color: white;
+  text-decoration: underline;
 }
 
 .Form {

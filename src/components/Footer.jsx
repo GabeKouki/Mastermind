@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 
 const Footer = () => {
@@ -26,15 +27,6 @@ const Footer = () => {
           <div className="Form">
             <div id="hubspotForm"></div>
           </div>
-  {/* 
-            <div className="FooterMessage">
-              <p className="CheckEmail">
-                Please check your email after submitting your application
-              </p>
-              <p className="AdditionalQuestions">
-                Additional questions may be required during the review process
-              </p>
-            </div> */}
 
           <div className="FooterLegal">
             <p>
@@ -45,6 +37,9 @@ const Footer = () => {
             <p className="Disclaimer">
               By invitation only. Services subject to qualification.
             </p>
+            <div className="PrivacyLink">
+              <Link to="/privacy-policy">Privacy Policy</Link>
+            </div>
           </div>
         </div>
       </div>
