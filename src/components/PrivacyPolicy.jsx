@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
 import '../styles/PrivacyPolicy.css';
+
+import React, { useEffect } from 'react';
 import { Shield, Mail, FileText, Clock } from 'lucide-react';
+import BackToHomeButton from './BackToHomeButton';
 
 const PrivacyPolicy = () => {
   useEffect(() => {
@@ -162,6 +164,7 @@ const PrivacyPolicy = () => {
           </section>
         </div>
       </div>
+      <BackToHomeButton />
     </div>
   );
 };
