@@ -17,7 +17,7 @@ const Hero = () => {
           <img src={Logo} alt="Mastermind Logo" />
         </div>
         <h1 className="HeroTitle">MASTERMIND</h1>
-        <h2 className="HeroTitleSub">FAMILY OFFICE SERVICES</h2>
+        <h2 className="HeroTitleSub">VIRTUAL FAMILY OFFICE</h2>
 
         <p className="HeroSubtitle">
           Where legacy meets precision — private wealth solutions for the
