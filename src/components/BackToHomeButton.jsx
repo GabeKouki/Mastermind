@@ -1,19 +1,17 @@
-import '../styles/BackToHomeButton.css'
+import "../styles/BackToHomeButton.css";
 
-import React from 'react'
-import { ArrowBigLeft } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { ArrowBigLeft } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const BackToHomeButton = () => {
-
-  
-
-
   return (
-    <Link to="/" className="BackToHomeButtonContainer">
-      <ArrowBigLeft size={24} className="BackToHomeButtonIcon" />
-    </Link>
-  )
-}
+    <div className="BackToHomeButtonContainer">
+      <Link to="/" className="BackToHomeButton">
+        Back To Home
+      </Link>
+    </div>
+  );
+};
 
-export default BackToHomeButton
+export default BackToHomeButton;

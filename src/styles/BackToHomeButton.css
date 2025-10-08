@@ -1,28 +1,26 @@
 .BackToHomeButtonContainer {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.BackToHomeButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 100;
-  background-color: red;
-  border-radius: 32px;
-  cursor: pointer;
-  animation: blink 2.5s ease-in-out infinite;
+  text-decoration: none;
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 1px solid var(--primary-blue);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
 }
 
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.BackToHomeButton:hover {
+  background-color: white;
+  color: var(--primary-blue);
 }
+
